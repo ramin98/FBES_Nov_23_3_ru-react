@@ -1,0 +1,11 @@
+.number-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px 10px;
+  list-style: none;
+}
+
+.list-items {
+  padding: 10px;
+  border: 2px solid black;
+}
