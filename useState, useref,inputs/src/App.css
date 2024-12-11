@@ -1,3 +1,5 @@
+
+
 ul {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -26,4 +28,24 @@ form{
   border: 2px solid black;
   padding: 15px;
   width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header, footer{
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+header, footer a{
+  color: white;
+}
+
+main{
+  padding: 30px;
+  text-align: center;
+
 }
