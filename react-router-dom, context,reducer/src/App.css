@@ -1,0 +1,51 @@
+
+
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px 10px;
+  list-style: none;
+}
+
+ul li {
+  padding: 10px;
+  border: 2px solid black;
+}
+
+ul li img{
+  width: 100%;
+}
+
+
+.hide{
+  display: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 2px solid black;
+  padding: 15px;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header, footer{
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+header ul li a{
+  color: white;
+}
+
+main{
+  padding: 30px;
+  text-align: center;
+
+}
