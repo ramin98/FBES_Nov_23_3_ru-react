@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import ProductsPage from "./Pages/ProductsPage";
-// import BagPage from "./Pages/BagPage";
+import BagPage from "./Pages/BagPage";
 
 function MainComponent() {
   
@@ -9,7 +9,7 @@ function MainComponent() {
       <main>
         <Routes>
             <Route path="/" element={<ProductsPage/>}/>
-            {/* <Route path="/bag" element={<BagPage/>}/> */}
+            <Route path="/bag" element={<BagPage/>}/>
         </Routes>
       </main>
     );

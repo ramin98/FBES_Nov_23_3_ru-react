@@ -1,4 +1,5 @@
-
+import { useDispatch } from "react-redux";
+import { addToBag } from "../../store/reducerBag";
 
 function ProductsItem({
   product_name,
@@ -7,8 +8,7 @@ function ProductsItem({
   url,
   id,
 }) {
-    
-
+  let dispatch = useDispatch();
   return (
     <li>
       <p>{product_name}</p>
@@ -17,16 +17,15 @@ function ProductsItem({
       <img src={url} alt={product_name} />
       <button
         onClick={() =>
-          bagDispatch({
-            type: "ADD TO BAG",
-            payload: {
+          dispatch(
+            addToBag({
               product_name,
               product_description,
               product_price,
               url,
               id,
-            },
-          })
+            })
+          )
         }
       >
         ADD TO BAG

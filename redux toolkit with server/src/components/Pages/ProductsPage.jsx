@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
 import ProductsList from "../Products/ProductsList";
-import { productsSorting } from "../../store/reducerProducts";
 
 function ProductsPage() {
   
@@ -9,11 +8,11 @@ function ProductsPage() {
   return (
     <section>
       <h1>Products Page</h1>
-      <select onChange={(ev) => dispatch(productsSorting(ev.target.value))}>
+      {/* <select onChange={(ev) => dispatch(productsSorting(ev.target.value))}>
         <option value="UP">UP</option>
         <option value="DOWN">DOWN</option>
 
-      </select>
+      </select> */}
       <ProductsList/>
     </section>
   );

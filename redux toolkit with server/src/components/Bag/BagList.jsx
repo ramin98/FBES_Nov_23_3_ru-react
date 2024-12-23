@@ -1,13 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import BagItem from "./BagItem";
 import { useEffect } from "react";
+import { getBag } from "../../store/reducerBag";
 
 function BagList() {
   let dispatch = useDispatch()
-  let bag = useSelector((state) => state.bagReducer.bag)
+  let bag = useSelector((state) => state.bag.bag)
 
   useEffect(() => {
-    dispatch({ type: "GET BAG", payload:'sfdsaf' });
+    dispatch(getBag());
   }, []);
 
   return (
